@@ -6,7 +6,6 @@ use std::io::{Read, Write};
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
     let plaintext_file = std::env::var("FILE_NAME").unwrap_or("plaintext_file.txt".to_string());
-    //let plaintext_file = "plaintext_file.txt";
     let encrypted_file = "encrypted_file.des";
     let decrypted_file = "decrypted_file.txt";
 
